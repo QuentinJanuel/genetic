@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Genetic path finding</title>
+	<link rel="stylesheet" type="text/css" href="resources/style.css">
+	<link rel="stylesheet" type="text/css" href="resources/input.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script type="text/javascript" src="resources/main.js"></script>
+</head>
+<body>
+	<canvas id='ctx'></canvas>
+	<div>
+		Left click:<br> - Create obstacle<br><br>
+		Right click:<br> - Remove obstacle<br><br>
+		<br>
+		Generation: <span id='g'></span><br>
+		<button id='r'>Reset evolution</button><br>
+		<button id='ro'>Remove all obstacles</button><br>
+		Lifespan: (automatically resets the evolution)<input id='l'  value='200' min='50' max='300' type='range'></input>
+		Population size: <span id='ps'></span> (automatically resets the evolution)<input id='gps' step='1' value='100' min='10' max='300' type='range'></input>
+		Mutation: <span id='mv'></span>%<input id='m' step='0.1' value='2' min='0' max='10' type='range'></input>
+		Max speed allowed: <span id='spd'></span><input id='maxspd' value='0.4' min='0.1' step='0.01' max='1' type='range'></input>
+	</div>
+</body>
+</html>
